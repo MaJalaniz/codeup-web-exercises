@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>More forms, Last one?</title>
+</head>
+<body>
+    <form method="POST" action="https://request-inspector.glitch.me">
+        <label for="credit-number">Credit card number</label>
+        <input id="credit-number" name="credit-number" type="text" required>
+       <br>
+        <label for="expire-date">Expiration month/year</label>
+        <input id="expire-date" name="expire-date" type="text" required>
+       <br>
+        <label for="secure-number">Security Number</label>
+        <input id="secure-number" name="secure-number" type="text" required>
+       <br>
+        <label for="bill-address">Billing Address</label>
+        <input id="bill-address" name="bill-address" type="text" required>
+       <br>
+        <input name="future-transactions" value="true" type="checkbox">Keep this card on file for future transactions
+       <br>
+       <br>
+        <button type="submit">Buy Now!</button>
+
+    </form>
+</body>
+</html>
