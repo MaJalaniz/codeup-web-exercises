@@ -11,15 +11,40 @@ h1 {
     text-decoration: underline;
 }
 body{
-    background-color:darkorange;
+    background-color:silver;
     font-family:"Comic Sans MS";
 }
 .tables{
     border-style:solid;
 }
+main>div {
+    text-align: center;
+}
+li {
+    align-content:center;
+}
+section{
+    text-align:center;
+}
 ul {
     list-style:georgian outside url('/non-existent.svg');
+
 }
 ol {
-    list-style: ;
+    list-style:upper-alpha;
+}
+a:link {
+    color:green;
+}
+
+a:visited {
+    color:black;
+}
+
+a:hover {
+    color:yellow;
+}
+
+a:active {
+    color:brown;
 }
