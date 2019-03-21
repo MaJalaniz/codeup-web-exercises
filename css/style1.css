@@ -1,6 +1,11 @@
-.Fancy-header{
-    color:purple;
+ul {
+    list-style:georgian outside url('/non-existent.svg');
+
 }
+ol {
+    list-style:upper-alpha;
+}
+
 header {
     text-align: center;
     font-family:"Rockwell Extra Bold";
@@ -10,29 +15,63 @@ h1 {
     color: blue;
     text-decoration: underline;
 }
-body{
+body {
     background-color:silver;
     font-family:"Comic Sans MS";
 }
+img {
+    padding-left:50px;
+    padding-right:50px;
+    padding-top:50px;
+}
+section p{
+    background-color:peachpuff;
+    padding-top:10px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:20px;
+}
+
+.Fancy-header{
+    color:purple;
+}
 .tables{
+    padding-top:50px;
+    padding-left:500px;
+    padding-right:450px;
+    padding-bottom:50px;
     border-style:solid;
 }
-main>div {
-    text-align: center;
-}
-li {
-    align-content:center;
-}
-section{
+
+.title {
     text-align:center;
 }
-ul {
-    list-style:georgian outside url('/non-existent.svg');
+.Products {
+    text-align:center;
+}
 
+.guarantee{
+    padding-left:450px;
 }
-ol {
-    list-style:upper-alpha;
+
+.fade-in {
+    opacity: 9;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 7s;
 }
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 a:link {
     color:green;
 }
@@ -47,4 +86,8 @@ a:hover {
 
 a:active {
     color:brown;
+}
+
+a{
+    padding-left:175px;
 }
