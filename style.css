@@ -1,0 +1,12 @@
+body {
+    color:black;
+    background-color:lightgrey;
+}
+
+.info {
+    border-style: solid;
+}
+
+div {
+    padding:5px;
+}
