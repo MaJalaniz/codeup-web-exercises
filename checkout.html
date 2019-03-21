@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <title>More forms, Last one?</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="info">
     <form method="POST" action="https://request-inspector.glitch.me">
+        <div class="space">
         <label for="credit-number">Credit card number</label>
         <input id="credit-number" name="credit-number" type="text" required>
+        </div>
        <br>
+        <div>
         <label for="expire-date">Expiration month/year</label>
         <input id="expire-date" name="expire-date" type="text" required>
+        </div>
        <br>
+        <div>
         <label for="secure-number">Security Number</label>
         <input id="secure-number" name="secure-number" type="text" required>
+        </div>
        <br>
+        <div class="sm">
         <label for="bill-address">Billing Address</label>
         <input id="bill-address" name="bill-address" type="text" required>
+        </div>
        <br>
-        <input name="future-transactions" value="true" type="checkbox">Keep this card on file for future transactions
+        <input name="future-transactions" value="true" type="checkbox">Keep this card on file for future transactions>
        <br>
        <br>
         <button type="submit">Buy Now!</button>
 
     </form>
+    </div>
 </body>
 </html>
