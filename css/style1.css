@@ -1,3 +1,25 @@
 .Fancy-header{
     color:purple;
 }
+header {
+    text-align: center;
+    font-family:"Rockwell Extra Bold";
+
+}
+h1 {
+    color: blue;
+    text-decoration: underline;
+}
+body{
+    background-color:darkorange;
+    font-family:"Comic Sans MS";
+}
+.tables{
+    border-style:solid;
+}
+ul {
+    list-style:georgian outside url('/non-existent.svg');
+}
+ol {
+    list-style: ;
+}
