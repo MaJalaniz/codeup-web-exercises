@@ -6,16 +6,17 @@ ul {
 li {
     padding:20px;
 }
+li {
+    padding:20px;
+}
 ol {
     list-style:none;
     text-align:center;
-
 }
 
 header {
     text-align: center;
     font-family:"Rockwell Extra Bold";
-    /** provide a generic default **/
 
 }
 h1 {
@@ -28,8 +29,6 @@ body {
     background-image:url(../img/pexels-photo-1068523.jpeg);
     background-repeat:no-repeat;
     background-size:250px;
-   /** Stretch out background image to cover everything in the header tag **/
-
 }
 img {
     padding-left:50px;
