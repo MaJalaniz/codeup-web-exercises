@@ -25,9 +25,12 @@ header {
 a {
     color: var(--link-color);
 }
+.container {
+
+}
 .media-body {
     float:left;
-    width:100%;
+    width:calc(100% - 10px);
 }
 .media-image{
     width:50px;
@@ -41,17 +44,17 @@ a {
     overflow: visible;
 }
 .profile-details {
-    width:20%;
+    width:calc(25% - 70px);
     margin:0 .5em;
     float:left;
 }
 .who-to-follow {
-    width:26%;
+    width:calc(25% - -15px);
     margin:0 .5em;
     float:right;
 }
 .timeline {
-    width:50%;
+    width:calc(50% - -3px);
     margin:0 .5em;
     float:left;
 }
