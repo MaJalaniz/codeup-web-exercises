@@ -13,7 +13,7 @@ body, html {
     height: 100%;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     font-family: Arial, Ubuntu, sans-serif;
 }
 header {
@@ -32,8 +32,9 @@ main {
 h4 {
     position:relative;
     top:0px;
-    right:-35px;
+    right:-44px;
 }
+
 .container {
 
 }
@@ -49,14 +50,14 @@ h4 {
     position: relative;
     top:63px;
     right:7px;
-    padding:-3px;
+
 }
 .media {
     width:100%;
     background-color:white;
     border-bottom:1px dotted black;
     padding:.5em;
-    overflow: visible;
+    overflow: auto;
 }
 .profile-details {
     width:calc(25% - 70px);
@@ -127,7 +128,7 @@ h4 {
     border-radius: 5px;
     position:relative;
     top:27px;
-    right:-42px;
+    right:-47px;
 }
 .btn-large {
     font-size: 1.3em;
