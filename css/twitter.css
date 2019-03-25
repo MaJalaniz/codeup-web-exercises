@@ -48,6 +48,7 @@ a {
     margin:0 .5em;
     float:left;
 }
+
 .who-to-follow {
     width:calc(25% - -15px);
     margin:0 .5em;
@@ -60,9 +61,11 @@ a {
 }
 .profile-image {
     position:absolute;
+    top:270px;
 }
 .profile-entry {
     margin:.5em;
+    text-decoration:underline;
 }
 .nav-item {
     display:inline-block;
