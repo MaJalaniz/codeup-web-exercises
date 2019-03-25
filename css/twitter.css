@@ -35,7 +35,11 @@ h4 {
     right:-50px;
     max-width:213px;
 }
-
+.profile-entry {
+    color:yellow;
+    position:relative;
+    left:23px;
+}
 .container {
 
 }
