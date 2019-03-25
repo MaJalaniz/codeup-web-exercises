@@ -31,8 +31,9 @@ main {
 }
 h4 {
     position:relative;
-    top:-38px;
-    right:-44px;
+    top:-31px;
+    right:-50px;
+    max-width:213px;
 }
 
 .container {
@@ -48,8 +49,8 @@ h4 {
     width:50px;
     margin-top:1.33em;
     position: relative;
-    top:30px;
-    right:7px;
+    top:36px;
+    right:0px;
 
 }
 .media {
@@ -127,8 +128,8 @@ h4 {
     padding: 8px;
     border-radius: 5px;
     position:relative;
-    top:-10px;
-    right:-47px;
+    top:-4px;
+    right:-53px;
 }
 .btn-large {
     font-size: 1.3em;
