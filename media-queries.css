@@ -1,0 +1,82 @@
+
+/** Project partners; Matthew and Ali **/
+
+@media screen and (max-width: 480px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        font-family: sans-serif;
+    }
+    .alert-info {
+        position: relative;
+
+        border: solid;
+        border-width: 0px;
+        margin: 3%;
+        padding: 5%;
+        padding-left: 25%;
+        padding-right: 30%;
+        background-color: #cbfdfd;
+        order: 1;
+        text-align: left;
+        text-decoration-color: black;
+        text-decoration: none;
+    }
+}
+h1 {
+    position: absolute;
+    height: 63px;
+    width: 233px;
+    top: 6%;
+    left: 19%;
+    font-size: 4em;
+    margin-top: 5%;
+}
+nav {
+    order: 3;
+    position:relative;
+    left:0em;
+    top:2em;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+li {
+    align-items: stretch;
+    margin:5px;
+    width: 20em;
+    right: 63px;
+    border:solid;
+    padding:10px;
+    text-align:center;
+}
+.header-img{
+    order: 4;
+    display: none;
+}
+.main{
+    order: 5;
+    display: none;
+}
+.sub-section{
+    order: 6;
+    display: none;
+}
+footer>p{
+    order: 7;
+    display: none;
+}
+#social-media-links{
+    order: 8;
+    display: none;
+}
+}
