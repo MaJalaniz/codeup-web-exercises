@@ -1,0 +1,26 @@
+
+
+
+        nav {
+            border-top: solid 1px;
+            width: 100%;
+            margin:.25em;
+        }
+
+        ul, li {
+            margin-right:.25em;
+        }
+
+        input.form-control {
+            margin-right:.75em;
+        }
+        h1 {
+            text-align:center;
+        }
+        .btn {
+            background-color: white;
+            color: black;
+        }
+        .jumbotron {
+
+        }
