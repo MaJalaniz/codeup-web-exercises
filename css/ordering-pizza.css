@@ -26,9 +26,13 @@
             height:auto;
 
         }
+        .list-group {
+            text-align:left;
+        }
         .btn {
-            background-color: white;
+            background-color: blue;
             color: black;
+            float:right;
         }
         .jumbotron {
 
@@ -72,7 +76,7 @@
 
             }
         }
-        .card-title{
+        div.card-header {
             text-align:left;
 
         }
