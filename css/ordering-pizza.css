@@ -4,6 +4,9 @@
             width: 100%;
             margin:.25em;
         }
+        li.nav-item{
+            background-color:white;
+        }
 
         ul, li {
             margin-right:.25em;
@@ -16,6 +19,9 @@
             text-align: center;
             background-color: white;
             opacity: .75;
+        }
+        .card-header:first-child {
+            background-color:lightblue;
         }
         .container-fluid {
             max-width:100%;
@@ -30,13 +36,14 @@
             text-align:left;
         }
         .btn {
-            background-color: blue;
+            background-color: white;
             color: black;
             float:right;
         }
         .jumbotron {
 
         }
+
 
 
         @media (max-width: 575.98px) {
