@@ -1,7 +1,7 @@
     body {
         box-sizing:border-box;
         }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 775px) {
         .column.one-third,
         .column.one-half {
             width: 100%;
@@ -16,42 +16,42 @@
     .column {
         float: left;
         padding: 10px;
-        border:1px solid black;
+        border: 1px solid black;
         width:100%;
         background-color:green;
     }
     .column.one-half {
         float: left;
         padding: 10px;
-        border:1px solid black;
+        border: 1px solid black;
         width:50%;
         background-color:yellow;
     }
     .column.one-third {
         float: left;
         padding: 10px;
-        border:1px solid black;
+        border: 1px solid black;
         width:33%;
         background-color:orange;
     }
     .column.one-fourth {
         float: left;
         padding: 10px;
-        border:1px solid black;
-        width:24%;
+        border: 1px solid black;
+        width:25%;
         background-color:red;
     }
     .column.one-sixth {
         float: left;
         padding: 10px;
-        border:1px solid black;
-        width:16.666%;
+        border: 1px solid black;
+        width:16%;
         background-color:violet;
     }
     .column.one-eighth {
         float: left;
         padding: 10px;
-        border:1px solid black;
+        border: 1px solid black;
         width:12%;
         background-color:indigo;
     }
