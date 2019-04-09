@@ -1,0 +1,6 @@
+git config --global user.name "Matthew Alaniz"
+    git config --global user.email alaniz.matthew07@gmail.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
