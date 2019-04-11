@@ -90,38 +90,42 @@
             AuthorfirstName: "Douglas",
             AuthorlastName: " Adams"
         },
-
         {
-            Title: "The Fountain",
-            Author: "Ayn Rand"
-
+            Title: "The Fountainhead",
+            AuthorfirstName: "Ayn",
+            AuthorlastName:" Rand"
         },
-
         {
             Title: "Endless Forms Most Beautiful",
-            Author: "Shaun B. Carroll"
-
+            AuthorfirstName: "Shaun",
+            AuthorlastName: " Carroll"
         },
         {
             Title: "Your Inner Fish",
-            Author:"Neil Shubin"
-
+            AuthorfirstName:"Neil",
+            AuthorlastName: " Shubin"
         },
         {
             Title: "The Count of Monte Cristo",
-            Author:"Alexander Dumas"
-
+            AuthorfirstName:"Alexander",
+            AuthorlastName: " Dumas"
         }
     ];
     console.log("The first book on the list is " + books[0].Title + " by " + books[0].AuthorfirstName + books[0].AuthorlastName);
-    console.log("The first book on the list is " + books[1].Title + " by " + books[1].AuthorfirstName + books[1].AuthorlastName);
-    console.log("The first book on the list is " + books[2].Title + " by " + books[2].AuthorfirstName + books[2].AuthorlastName);
-    console.log("The first book on the list is " + books[3].Title + " by " + books[3].AuthorfirstName + books[3].AuthorlastName);
-    console.log("The first book on the list is " + books[4].Title + " by " + books[4].AuthorfirstName + books[4].AuthorlastName);
+    console.log("The second book on the list is " + books[1].Title + " by " + books[1].AuthorfirstName + books[1].AuthorlastName);
+    console.log("The third book on the list is " + books[2].Title + " by " + books[2].AuthorfirstName + books[2].AuthorlastName);
+    console.log("The fourth book on the list is " + books[3].Title + " by " + books[3].AuthorfirstName + books[3].AuthorlastName);
+    console.log("The fifth book on the list is " + books[4].Title + " by " + books[4].AuthorfirstName + books[4].AuthorlastName);
+
+    for ( var i = 1; i <= 4; ++i) {
+        console.log("Book # " + i + " is " + books[i]);
+    }
+    books.forEach();
+      // Maybe wrap the array of objects in a For loop
+    // the information in an Object can layered like directories for a computer
 
 
-
-
+    // wrap in a .Foreach loop
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -147,13 +151,14 @@
      *      ...
      */
 
-    for ( var i = 1; i <= 4; ++i) {
-        console.log("Book # " + i + " is " + books[i].title);
-    }
+    //for ( var i = 1; i <= 4; ++i) {
+     //   console.log("Book # " + i + " is " + books[i]);
+    //}
 
 
-
-
+// object string literal var dog {} dog.names: "Tj" etc
+// object array is within the {}
+//
 
     /**
      * Bonus:
