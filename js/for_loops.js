@@ -9,8 +9,63 @@ function showMultiplicationTable(num1) {
 
     }
 }
+//Try to write out the problem as a paragraph to try and understand what the problem is asking
+//for. <--Pseudo coding --> try breaking down the problem rather than all at once
 
+//For loops are for when you have a number in mind for when to stop
+//While loops are for uncertain amount of times
+/*
+{
+var outputRow(num2, num3) {
+var output = "";
+output += num2 + " x " num3 + " x " + total;
+return output;
+}
+}
+
+function showMultiplication(num) {
+var
+for (var i = 1; i <= 10; ++i){
+------
+}
+output += outputRow
+
+return output
+
+
+*/
+
+//iterate code 10 times
+// function to log if even or odd
+
+function returnRandom() {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+function oddEven(num) {
+    var output = "";
+    outputMessage = ( num % 2 === 0) ? " is even" : " is odd";
+    console.log(outputMessage);
+}
+ function evenOddCalculator() {
+    for (var i = 1; i <= 10; ++i){
+        var randNum = returnRandNum(20, 200);
+        var result = isEvenOdd(randNum);
+
+    }
+    return result;
+ }
+
+ // it is better to use a return value than a console.log when ending a function
 console.log(showMultiplicationTable());
+
+// utilizing the .repeat to get the stairs effect
+   // for (var i = 1; i < 10; ++i ) {
+    //console.log(string(i).repeat(i));
+    //}
+// use var output = "";
+// var (j = 0; j < i; j+= 1)h
+// output += i  is very useful
+
 
 // create a For loop to create a Stairs effect
 /*for (var i = 1; i <= 1; ++i) {
@@ -40,26 +95,17 @@ for (var i = 104; i >= 5; --i) {
     console.log(i -= 4);
 }
 
+
+
 // counting up in Odd numbers to 49 and breaking at 27.
 
-function stairCase(n, string) {
-    string = string || "";
+    //prompt the user for an odd number between 1-50
 
-    if (n > 0) {
-        string += "#";
-        console.log(string);
-        this.stairCase(n - 1, string);
-    }
-}
-
-stairCase(6);
+    var input = prompt("Please choose an odd number between 1-50");
+    var isNumeric = !isNaN(parseFloat(input)) && isFinite(input);
+        while (input === null) {
+            console.log('thank you');
+        }
 
 
-
-
-   // var i = 1;
-   // while (i <= 25) {
-      //  console.log((i * 2) - 1); // add -1 to get odd
-       // ++i
-    //}
-
+// */
