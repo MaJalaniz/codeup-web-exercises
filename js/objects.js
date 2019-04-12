@@ -12,7 +12,7 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
-    //You can add spaces in between the " " so the console.log will separate them instead of mashing them together
+
     var person = {
 
     "firstName": "Jacob",
@@ -21,8 +21,17 @@
     console.log(person.firstName);
     console.log(person.lastName);
 
+// Walkthrough portion
+    /*var person = {
 
+        firstName: "Jacob",
+        lastName: " Alani"
+    };
+    var person {}
+    person.firstName:"",
+    person.lastName:""
 
+    */
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -33,10 +42,11 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    var sayHello = function() {
+     person.sayHello = function() {
         console.log("Hello from " + person.firstName + person.lastName);
+        //return "Hello from " + this.firstName + this.lastName
     };
-    sayHello();
+    console.log(person.sayHello());
 
 
 
@@ -57,12 +67,41 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+     var shoppers = [
+         {name: 'Cameron', amount: 180},
+         {name: 'Ryan', amount: 250},
+         {name: 'George', amount: 320}
+     ];
+        // Return discount amount
+             function discountTotal(total){
+                 var output = 0;
+                 if (total > 200) {
+                     output = total * .12
+                 }
+                 return output;
+             }
+        // display shopper information
+            function displayShopperInfo(shopper) {
+                 var output = "";
+                 var amount = shopper.amount;
+                 var discount = convertToCurrency();discountTotal();
+                 output += shopper.name + " spent $" + shopper.amount.toFixed(2);
+                 output += " and shopper received a discount of $" +  discountTotal(shopper.amount).toFixed(2);
+                 output += " and paid $" + (shopper.amount - discountTotal(shopper.amount).toFixed(2);
+            } return output;
 
+            //console.log(displayShopperInfo(shoppers[0]));
+
+
+            function displayShoppersInfo(shoppers) {
+                Shoppers.forEach(function(shopper));
+                console.log(displayShoppersInfo(shopper));
+            }
+
+            for (var i = 0; i < shopper.length; ++i){
+                console.log(displayShopperInfo[i]);
+            }
+        //
 
 
 
@@ -83,49 +122,65 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-    var books = [
+    var booksList = [
 
         {
-            Title : "The Salmon of Doubt",
-            AuthorfirstName: "Douglas",
-            AuthorlastName: " Adams"
+            title : "The Salmon of Doubt",
+            author: {
+                AuthorfirstName: "Douglas",
+                AuthorlastName: " Adams"
+            }
         },
         {
             Title: "The Fountainhead",
-            AuthorfirstName: "Ayn",
-            AuthorlastName:" Rand"
+            author: {
+                AuthorfirstName: "Ayn",
+                AuthorlastName: " Rand"
+            }
         },
         {
             Title: "Endless Forms Most Beautiful",
-            AuthorfirstName: "Shaun",
-            AuthorlastName: " Carroll"
+            author: {
+                AuthorfirstName: "Shaun",
+                AuthorlastName: " Carroll"
+            }
         },
         {
             Title: "Your Inner Fish",
-            AuthorfirstName:"Neil",
-            AuthorlastName: " Shubin"
+            author: {
+                AuthorfirstName: "Neil",
+                AuthorlastName: " Shubin"
+            }
         },
         {
             Title: "The Count of Monte Cristo",
-            AuthorfirstName:"Alexander",
-            AuthorlastName: " Dumas"
+            author: {
+                AuthorfirstName: "Alexander",
+                AuthorlastName: " Dumas"
+            }
         }
     ];
-    console.log("The first book on the list is " + books[0].Title + " by " + books[0].AuthorfirstName + books[0].AuthorlastName);
-    console.log("The second book on the list is " + books[1].Title + " by " + books[1].AuthorfirstName + books[1].AuthorlastName);
-    console.log("The third book on the list is " + books[2].Title + " by " + books[2].AuthorfirstName + books[2].AuthorlastName);
-    console.log("The fourth book on the list is " + books[3].Title + " by " + books[3].AuthorfirstName + books[3].AuthorlastName);
-    console.log("The fifth book on the list is " + books[4].Title + " by " + books[4].AuthorfirstName + books[4].AuthorlastName);
+    console.log("The first book on the list is " + booksList[0].Title + " by " + booksList[0].AuthorfirstName + booksList[0].AuthorlastName);
+    console.log("The second book on the list is " + booksList[1].Title + " by " + booksList[1].AuthorfirstName + booksList[1].AuthorlastName);
+    console.log("The third book on the list is " + booksList[2].Title + " by " + booksList[2].AuthorfirstName + booksList[2].AuthorlastName);
+    console.log("The fourth book on the list is " + booksList[3].Title + " by " + booksList[3].AuthorfirstName + booksList[3].AuthorlastName);
+    console.log("The fifth book on the list is " + booksList[4].Title + " by " + booksList[4].AuthorfirstName + booksList[4].AuthorlastName);
+    //console.log(booksList[0].title + booksList[0].author.authorlastName);
 
-    for ( var i = 1; i <= 4; ++i) {
-        console.log("Book # " + i + " is " + books[i]);
-    }
-    books.forEach();
-      // Maybe wrap the array of objects in a For loop
+    booksList.forEach(function(books, i){
+        var output= "";
+        output =
+        output += "Book # " + (i + 1) + "/n";
+        output += "Title: "+ books.Title;
+        output += "Author: " + books.author.firstName + books.author.lastName;
+        console.log("- - - - - - - -");
+    });
+
+
+
+
     // the information in an Object can layered like directories for a computer
 
-
-    // wrap in a .Foreach loop
     /**
      * TODO:
      * Loop through the books array and output the following information about
@@ -170,5 +225,11 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+
+
+
+
+
 
 })();
