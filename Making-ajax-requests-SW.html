@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fetching info using ajax</title>
+</head>
+<body>
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+
+    $(document).ready(function() {
+
+    $.ajax('https://swapi.co/api/species/24/').done(function(data){
+            console.log(data.name);
+        });
+
+    $.ajax('https://swapi.co/api/people/56/').done(function(data){
+       console.log(data.name);
+    });
+
+
+    $.ajax('https://swapi.co/api/films/2/').done(function(data){
+        console.log(data.title);
+    }).fail(function(jqXHR,status,error) {
+            alert("Check the console log for possible errors");
+            console.log(status);
+            console.log(error);
+        }).always(function() {
+         alert("I will always run");
+        });
+
+
+    $.get('https://swapi.co/api/films/2/', {
+            "limit": 10,
+            "offset": 10
+        }).done(function(data) {
+            console.log(data);
+    });
+/*
+    $.post('https://swapi.co/api/films/2/', {
+        name:"nameHere",
+        species: "speciesType",
+        age: "howOld"
+    }).done(function(data){
+       console.log(data);
+    });
+*/
+
+
+        //var ajaxData = $.ajax('https://swapi.co/api/species/24/');
+       //console.log(ajaxData);
+
+
+    });
+
+
+</script>
+
+<script src="js/jquery-2.2.4.js"></script>
+</body>
+</html>

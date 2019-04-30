@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h1>Would you like to sign up for the newsletter? <span>x</span></h1>
+</div>
+    <h2 class="login">Register with our site</h2>
+
+
+<h3>National Parks FAQ</h3>
+<h4>Lake Band-e Amir Afganistan</h4>
+<ul class="hideIt">
+    <li class="firstFact">Band-e Amir is one of the few rare natural lakes in the world which are created by travertine systems.</li>
+    <li>Band-e Amir was to become Afghanistan's first national park in the 1960s but this was delayed due to political crises and the decades of wars</li>
+    <li>Fact 3:</li>
+    <li class="lastFact">Fact 4</li>
+
+</ul>
+
+<h4 id="national-parks-heading">Carlsbad Caverns</h4>
+<ul class="hideIt">
+    <li class="firstFact">The caves in Carlsbad Caverns are 56°F throughout the year, with high humidity.
+    </li>
+    <li>Lechuguilla Cave, made famous on the Planet Earth series, is located in Carlsbad Caverns National Park. It cannot be accessed by the public, and entry is allowed only for special research purposes.
+    </li>
+    <li>At present there are 117 known caves in the park, and more will be discovered. The cave known as Carlsbad Cavern is only one of these.
+    </li>
+    <li class="lastFact">There are at least 17 species of bats found in the park.</li>
+
+</ul>
+
+<h4>Enchanted Rock</h4>
+<ul class ="hideIt">
+    <li class="firstFact">Enchanted Rock stands 425 feet above its base, and its highest point is 1,825 feet above sea level</li>
+    <li>Both structures were formed with Town Mountain Granite, which is a mix of salmon-pink feldspar with flecks of black mica, quartz, biotite and other minerals</li>
+    <li>While this is just a legend, Tonkawa Indians believed ghosts inhabited the area because creaking sounds came from the dome.</li>
+    <li class="lastFact">While Earth is estimated to be 4.5 billion years old, Enchanted Rock formed when two continents collided over one billion years ago.
+    </li>
+</ul>
+h2 display none
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    "use script";
+    $(document).ready(function() {
+
+        $('ul').click(function() {
+            $('li').last().each(function () {
+                $('li.lastFact').css('background', 'yellow')
+            });
+        });
+            // hide the facts until chosen to display
+        //$(".hideIt").hide();
+
+
+            // toggles the park facts between on/off
+        $('h4').click(function() {
+            $('li').toggle();
+
+        });
+            // hides newsletter when x is pressed
+        $('span').click(function(){
+            $('div').hide();
+        });
+
+        //maybe fade everything else out and then run the fadeIn?
+        $('body').click(function() {
+            $('h2').toggle();
+            $('.login').fadeIn(8000)
+        });
+        $("j").delay();
+    });
+</script>
+
+<script src="js/jquery-2.2.4.js"></script>
+</body>
+</html>
+

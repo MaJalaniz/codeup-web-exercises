@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogging with Ajax</title>
+</head>
+<body>
+<div id="livePost">
+
+    <h3></h3>
+
+    <p></p>
+    <p></p>
+    <h4></h4>
+
+</div>
+
+
+
+
+<script src="js/jquery-2.2.4.js"></script>
+<script>
+    $(document).ready(function() {
+
+    $.ajax({'data/blog.JSON',
+        data:{},
+        success : function(json) {
+            $('<h1/>').text(json.title).appendTo('body');
+            $('<div class="content"/>')
+                .html(json.html).appendTo('body');
+        }
+/*
+        $.get('data/blog.JSON').done(function(blogPost){
+            var firstPost = blogPost;
+
+
+
+            for (var i = 0; i < firstPost.length; i++) {
+                var div;
+                var h3;
+
+
+                div = $('<div/>');
+                h3.append("<h3>" + firstPost[i].title + "</h3>");
+                p.append("<p>" + firstPost[i].content + "</p>");
+                p.append("<p>" + firstPost[i].categories + "</p>");
+                p.append("<h4>" + firstPost[i].date + "</h4>");
+                $('livePost').append(div);
+
+            }
+
+            console.log(firstPost);
+        });
+*/
+
+
+
+
+
+    });
+</script>
+
+<script src="js/jquery-2.2.4.js"></script>
+</body>
+</html>

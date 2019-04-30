@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox_maps.api</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+
+<button id="char" >Setting zoom to 10</button>
+<button id="wall" >Setting zoom to 15</button>
+<button id="good" >Setting zoom to 20</button>
+
+
+<script>//mapboxKey here vvvvvvvvvvvv
+mapboxgl.accessToken = mapboxKey;
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v9',
+    center:[-96.86127, 46.851438], // <-- Favorite restaurant  1840 45th St S, Fargo, ND 58103
+    zoom: 5 // 2 to see U.S
+});
+
+var restFood = {
+    address: "Space Aliens Grill & Bar",
+    popupHTML: "<p>Space Aliens Grill & Bar</p>"
+};
+
+
+function placeMarkerAndPopup(Food, token, map) {
+    geocode(Food.address, token).then(function(coordinates) {
+        var popup = new mapboxgl.Popup()
+            .setHTML(Food.popupHTML);
+        var marker = new mapboxgl.Marker()
+            .setLngLat([-96.86127, 46.851438])
+            .addTo(map)
+            .setPopup(popup);
+        popup.addTo(map);
+    });
+}
+
+placeMarkerAndPopup(restFood, mapboxKey, map);
+
+
+
+
+geocode("1840 45th St S, Fargo, ND", mapboxKey).then(function(result) {
+    map.setCenter(result);
+    console.log(result);
+});
+
+setTimeout(function() {
+    map.setZoom(10);
+}, 8000);
+setTimeout(function(){
+    map.setZoom(15)
+}, 10000);
+setTimeout(function() {
+    map.setZoom(20)
+}, 12000);
+
+<button id="chair" >asdfsadf</button>
+
+
+/*
+reverseGeocode({lng: -77.0502, lat: 38.8893}, mapboxKey).then(function(){
+
+});
+*/
+
+</script>
+</body>
+</html>

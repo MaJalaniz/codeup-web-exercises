@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://java.codeup.com/examples/javascript/ajax-store.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Online Store</title>
+</head>
+<body>
+
+<h1>My Tool Store</h1>
+
+<table id="products">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Categories</th>
+        </tr>
+    </thead>
+    <tbody id="insertProducts"></tbody>
+</table>
+<button id="reload" type="button">Refresh the page</button>
+
+<style>
+    th{
+        text-align:left;
+    }
+</style>
+
+
+<script src="js/jquery-2.2.4.js"></script>
+
+<script>
+(function() {
+    "use strict";
+    // TODO: Create an ajax GET request for /data/inventory.json
+      var tools = [
+          {
+              "title": "Hammer",
+              "quantity": 25,
+              "categories": [
+                  "tool"
+              ],
+              "price": 20
+          }, {
+              "title": "Drill",
+              "quantity": 5,
+              "categories": [
+                  "tool",
+                  " powered"
+              ],
+              "price": 100
+          }, {
+              "title": "Mower",
+              "quantity": 5,
+              "categories": [
+                  "tool",
+                  " gas",
+                  " outdoor"
+              ],
+              "price": 200
+          }, {
+              "title": "Screwdrivers",
+              "quantity": 25,
+              "categories": [
+                  "tool"
+              ],
+              "price": 10
+          }
+      ];
+      for (var i = 0; i < tools.length; i++) {
+          var tr;
+
+          tr = $('<tr/>');
+          tr.append("<td>" + tools[i].title + "</td>");
+          tr.append("<td>" + tools[i].quantity + "</td>");
+          tr.append("<td>" + tools[i].price + "</td>");
+          tr.append("<td>" + tools[i].categories + "</td>");
+          $('table').append(tr);
+      }
+
+    $('#reload').click()
+
+
+    // TODO: Take the data from inventory.json and append it to the products table
+    //       HINT: Your data should come back as a JSON object; use console.log() to inspect
+    //             its contents and fields
+    //       HINT: You will want to target #insertProducts for your new HTML elements
+
+    /*
+        var craft = $.ajax('data/inventory.JSON').done(function (tools) {
+            console.log(tools);
+        });
+
+
+
+        for (var i = 0; i < craft.length; i++) {
+            var tr;
+
+            tr = $('<tr/>');
+            tr.append("<td>" + craft[i].title + "</td>");
+            tr.append("<td>" + craft[i].quantity + "</td>");
+            tr.append("<td>" + craft[i].price + "</td>");
+            tr.append("<td>" + craft[i].categories + "</td>");
+            $('table').append(tr);
+
+        }
+      */
+
+})();
+</script>
+
+
+<script src="js/jquery-2.2.4.js"></script>
+</body>
+</html>

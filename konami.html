@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Konami Code!</title>
+</head>
+<body>
+<p>Enter the secret code for more lives!</p>
+<style>
+    body {
+        background:lightblue;
+    }
+
+</style>
+
+<audio id="heartSound" src="sounds/OOT_Get_Heart.wav" preload="auto"></audio>
+<script src="js/jquery-2.2.4.js"></script>
+
+<script>
+    "use strict";
+
+    $(document).ready(function() {
+
+        function konami(secret){
+            var input = " ";
+            var pattern = "ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightbaEnter";
+            $(document).keyup(function(e) {
+                input += e.key;
+                if (input.indexOf(pattern) === 1) {
+                    secret();
+                    input = " 12";
+                }
+                console.log(input);
+            });
+        }
+
+        $(document).ready(function() {
+            konami(function() {
+                //alert("Sounds");
+                alert("Zounds! You have added 30 lives! Spend them wisely");
+            });
+        });
+
+
+        function playSound() {
+            document.getElementById('heartSound').play();
+        }
+
+        /*
+        var audio = new Audio();
+        audio.src = "sounds/OOT_Get_Heart.wav";
+        //audio.play();
+
+        for (var i = 0; i <= 30; i++) {
+
+        }
+        */
+
+
+    });
+</script>
+
+
+
+
+<script src="js/jquery-2.2.4.js"></script>
+</body>
+</html>
