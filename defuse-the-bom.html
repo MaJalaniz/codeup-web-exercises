@@ -14,7 +14,7 @@
     "use strict";
     var count = 5;
     var detonationTimer = 0;
-    var interval = 1000; // interval time in milliseconds
+    var interval = 2500; // interval time in milliseconds
 
     //TODO: This function needs to be called once every second
     var intervalId = setInterval(function () {
@@ -23,13 +23,13 @@
            alert("EXTERMINATE!!");
             document.body.innerHTML = '';
         } else if (count > detonationTimer) {
-            alert(count--);
-            document.getElementById('timer').innerHTML = detonationTimer;
+            count--;
+            document.getElementById('timer').innerHTML = count;
             console.log(count + " second(s) left!!");
         }
 
     }, interval);
-    var invalidId = setInterval(invalidId, 1000);
+    //var invalidId = setInterval(invalidId, 1000);
 
 
     // Later, I'll need to refactor the code below vvvvv.

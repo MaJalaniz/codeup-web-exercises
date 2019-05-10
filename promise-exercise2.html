@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Github api and Promises</title>
+</head>
+<body>
+<script src="js/keys.js"></script>
+<script src="js/promises.js"></script>
+<script>
+    let gitKey = gitHubApi;
+
+    //My solution:
+    const oneUser = (userName) =>
+         fetch (
+
+        `https://api.github.com/users/${userName}/events/public`,
+             { headers:{
+        'Authorization': gitKey}}).then(response => response.json())
+             .then(data => data.find(event => event.type === 'PushEvent' ))
+             .then(data => (console.log(data['created_at']))); // to look at commits use data.payload.commits[0]
+
+    oneUser('MaJalaniz');
+
+    //Walkthrough solution:
+
+
+
+</script>
+</body>
+</html>

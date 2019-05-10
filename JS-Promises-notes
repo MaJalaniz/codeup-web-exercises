@@ -1,0 +1,38 @@
+
+
+Promises deal with Asynchronous actions
+like:
+-load times
+-timed actions
+-reading and writing files
+-making requests from APIs
+
+**a value** , a request object -> Promises
+
+.then: accepts a callback that will run when the promise is resolved
+.catch: accepts a callback that will run when the promise is rejected
+
+                            *****Running a promise vvvvvv****
+
+let goodKid = true;
+
+const getCake = new Promise((res, rej) => {
+        if (goodKid) {
+        resolve('the promise is resolved, grab cake');
+        } else {
+        reject("the promise is rejected, no cake");
+        }
+});
+
+            ****When the promise is resolve or rejected now do this vvvvvv****
+
+        getCake.then((data) => {
+            console.log(data);
+        }).catch(err) => {
+            console.log(err);
+        }
+
+
+        myPromise
+            .then();
+            .catch();

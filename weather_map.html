@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Map</title>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="css/weather_map.css" rel="stylesheet">
+
+</head>
+<body>
+
+<h3>The current temperature for San Antonio is:</h3>
+<div class = "monitor_data">
+<p class="summary">
+
+</p>
+
+</div>
+
+<div>
+<h2>Map area </h2>
+<form>
+    Latitude:<br>
+    <input type="text">
+    <br>
+    Longitude:<br>
+    <input type="text">
+    <br>
+    <button type="submit">Submit coordinates</button>
+</form>
+</div>
+
+<br>
+
+<pre id='coordinates' class='coordinates'></pre>
+
+
+
+<!--================================================================================== -->
+
+
+<script src="js/jquery-2.2.4.js"></script>
+
+<script src="js/keys.js"></script>
+
+<script src="js/mapbox-geocoder-utils.js"></script>
+<div id='map' style='width: 400px; height: 300px;'></div>
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+
+<script src="js/weather_map.js"></script>
+
+<script src="js/jquery-2.2.4.js"></script>
+
+<!--================================================================================= -->
+</body>
+</html>

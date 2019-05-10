@@ -28,7 +28,7 @@
     <main>
 
     <div>
-    <h1 class="joined"><strong>Core Values</strong></h1>
+    <h1 class="joined" id="joinMe"><strong>Core Values</strong></h1>
 
     <ul>
         <li>Competence</li>
@@ -39,7 +39,8 @@
     </div>
 <hr>
     <div>
-    <h1 class="joined"><strong>Our Process</strong></h1>
+        <button id="chair" >List Item text Change</button>
+    <h1 id="plan" class="joined"><strong>Our Process</strong></h1>
         <ol>
             <li>Plan</li>
             <li>Evaluate</li>
@@ -47,7 +48,8 @@
         </ol>
         <br>
 <hr>
-    <h1 class="joined"><strong>2020 Vision</strong></h1>
+        <button id="walls" >List Item text Change</button>
+    <h1 id="sight" class="joined"><strong>2020 Vision</strong></h1>
     <ul>
         <li>Become #1 in Techology</li>
         <li>Increase success by 20%</li>
@@ -105,6 +107,32 @@
             <a href="https://yahoo.com">Work with us!</a>
         </nav>
     </footer>
+            <script src="js/jquery-2.2.4.js"></script>
+            <script>
+                $(document).ready(function() {
+
+                    $('.title').click(function() {
+                        $('img').toggle();
+                    });
+
+                    $('h1.joined').hover(function(){
+                        $('#joinMe').html('What is love')
+                    });
+
+                    $('h1.fade-in').click(function(){
+                        $('.fade-in').hide();
+                    });
+
+                    $('.Products').dblclick(function(){
+                        $('table.tables').css('font-size', '40px');
+                    });
+
+
+
+                    });
+            </script>
+            <script src="js/jquery-2.2.4.js"></script>
+            <script src="js/welcome.js"></script>
 </body>
 </html>
 
