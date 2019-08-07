@@ -12,3 +12,8 @@ p.two{
 a.nav-link{
     color: black;
 }
+small {
+    position:relative;
+    left: 45px;
+    bottom:10px;
+}
