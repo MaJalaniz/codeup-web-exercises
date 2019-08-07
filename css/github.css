@@ -3,3 +3,9 @@ p.two{
     bottom: 39px;
     float: right;
 }
+ img.room{
+     padding-right:10px;
+ }
+ div.container{
+     border: solid lightgrey 1px;
+ }
