@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="349379c9-7715-4e6f-bad5-bdf8e129b5b1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/github.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/github.css" afterDir="false" />
-    </list>
+    <list default="true" id="349379c9-7715-4e6f-bad5-bdf8e129b5b1" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,20 +29,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/github.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="37" column="99" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="99" />
+            <state relative-caret-position="63">
+              <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/github.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="105">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -116,8 +114,8 @@
         <option value="$PROJECT_DIR$/konami.html" />
         <option value="$PROJECT_DIR$/testing-out-java.html" />
         <option value="$PROJECT_DIR$/js/practice-fun-condition.js" />
-        <option value="$PROJECT_DIR$/github.html" />
         <option value="$PROJECT_DIR$/css/github.css" />
+        <option value="$PROJECT_DIR$/github.html" />
       </list>
     </option>
   </component>
@@ -328,16 +326,15 @@
       <workItem from="1564344744317" duration="40000" />
       <workItem from="1564346132763" duration="30000" />
       <workItem from="1564346210632" duration="7000" />
-      <workItem from="1565188002476" duration="9380000" />
+      <workItem from="1565188002476" duration="9603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="500457000" />
+    <option name="totallyTimeSpent" value="500680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="709" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.35056543" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -682,17 +679,17 @@
     <entry file="file://$PROJECT_DIR$/img/garfield.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/github.html">
+    <entry file="file://$PROJECT_DIR$/css/github.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="37" column="99" selection-start-line="37" selection-start-column="67" selection-end-line="37" selection-end-column="99" />
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/github.css">
+    <entry file="file://$PROJECT_DIR$/github.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="63">
+          <caret line="92" column="4" selection-start-line="92" selection-start-column="4" selection-end-line="92" selection-end-column="4" />
         </state>
       </provider>
     </entry>
