@@ -8,6 +8,8 @@ p.two{
  }
  div.container{
      border: solid lightgrey 1px;
+     padding-left:0px;
+     padding-right:0px;
  }
 a.nav-link{
     color: black;
@@ -21,4 +23,7 @@ h5{
     position: relative;
     left: 18px;
     width: 800px;
+}
+thead.colors{
+    background-color: lightsteelblue;
 }
