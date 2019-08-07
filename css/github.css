@@ -35,3 +35,7 @@ h5{
 thead.colors{
     background-color: lightsteelblue;
 }
+span.badge.badge-pill.badge-secondary {
+    background-color: lightgrey;
+    color:black;
+}
