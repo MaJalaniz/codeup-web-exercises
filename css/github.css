@@ -9,3 +9,6 @@ p.two{
  div.container{
      border: solid lightgrey 1px;
  }
+a.nav-link{
+    color: black;
+}
