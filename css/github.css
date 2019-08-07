@@ -4,12 +4,14 @@ p.two{
     float: right;
     font-size: .8em;
     right:10px;
+    top:6px;
 }
 p.one{
     font-size: .8em;
     position:relative;
     left: 10px;
     width: 900px;
+    top: 41px;
 }
  img.room{
      padding-right:10px;
