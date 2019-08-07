@@ -1,28 +1,23 @@
-    function sayHello(name){
-        return 'Hello from '+ name +' to the future!';
-    }
-sayHello('codeup');
-var result = sayHello("codeup");
-console.log(result);
 
-var helloMessage = sayHello("Matthew");
-console.log(helloMessage);
 
-var myName = "Matthew";
-sayHello(myName);
-console.log(myName);
-
-    var random = Math.floor((Math.random() * 3) + 1);
-
-function isTwo(x) {
-    return x == 2 ;
+for (var i=1; i <= 20; i++)
+{
+   if (i % 15 == 0)
+      console.log("FizzBuzz");
+   else if (i % 3 == 0)
+      console.log("Fizz");
+   else if (i % 5 == 0)
+      console.log("Buzz");
+   else
+      console.log(i);
 }
 
-console.log(isTwo(random));
+let socks = [1,1,2,2,3,3,4,4,5];
+console.log(socks[3]);
 
-function calculateTip(x, y){
-    return x * y;
+for (let i = 0; i < socks.length; i++){
+   if(socks[i] === i){
+      console.log("this is number: " + socks[i]);
+
+   }
 }
-calculateTip(.2, 20);
-var totalNum = calculateTip(.2,20);
-console.log(totalNum);
