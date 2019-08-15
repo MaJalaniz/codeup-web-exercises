@@ -28,3 +28,10 @@ h1 {
     background-color: white;
     opacity:.7;
 }
+div.card{
+    text-align: left;
+}
+
+a.btn.btn-primary{
+    float:right;
+}
